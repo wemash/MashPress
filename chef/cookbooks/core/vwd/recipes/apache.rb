@@ -1,24 +1,3 @@
-# Determine if the directory is NFS.
-nfs = 0
-node["vm"]["synced_folders"].each do |folder|
-  if folder['guest_path'] == '/var/www'
-    if folder['type'] == 'nfs'
-      nfs = 1
-    end
-  end
-end
-
-directory "/var/www" do
-  if nfs == 0
-    owner "vagrant"
-    group "vagrant"
-  end
-end
-
-file "/var/www/index.html" do
-  action :delete
-end
-
 link "/home/vagrant/sites" do
   to "/var/www"
 end
@@ -26,7 +5,7 @@ end
 # Add www-data to vagrant group
 group "vagrant" do
   action :modify
-  members "www-data"
+  members ["www-data", "root"]
   append true
 end
 
@@ -34,8 +13,9 @@ web_app "localhost" do
   template "localhost.conf.erb"
 end
 
-node.default["apache"]["user"] = "vagrant"
-node.default["apache"]["group"] = "vagrant"
+# We run as root so that we don't have to change the file permissions.
+node.default["apache"]["user"] = "root"
+node.default["apache"]["group"] = "root"
 
 modules = [
   "cgi",

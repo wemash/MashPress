@@ -17,9 +17,7 @@
     "recipe[mysql::server]",
     "recipe[vwd::apache]",
     "recipe[vwd::graphviz]",
-    "recipe[vwd::vwd_sites]",
     "recipe[vwd::php]",
-    "recipe[vwd::uploadprogress]",
     "recipe[vwd::mailcatcher]",
     "recipe[vwd::phpmyadmin]",
     "recipe[vwd::mysql]",
@@ -31,8 +29,6 @@
     "recipe[vwd::rsync]",
     "recipe[vwd::curl]",
     "recipe[vwd::composer]",
-    "recipe[vwd::drush]",
-    "recipe[vwd::vwd_help]",
     "recipe[vwd::vim]",
     "recipe[vwd::patchutils]",
     "recipe[vwd::siege]"

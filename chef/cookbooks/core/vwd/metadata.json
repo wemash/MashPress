@@ -1,7 +1,7 @@
 {
   "name": "vwd",
-  "description": "Installs Drupal development environment.",
-  "license": "GPL v3",
+  "description": "Installs Wordpress development environment.",
+  "license": "MIT",
   "platforms": {
     "ubuntu": ">= 0.0.0"
   },
