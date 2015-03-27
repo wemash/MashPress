@@ -5,7 +5,7 @@ end
 # Add www-data to vagrant group
 group "vagrant" do
   action :modify
-  members ["www-data", "root"]
+  members 'www-data'
   append true
 end
 
@@ -14,8 +14,8 @@ web_app "localhost" do
 end
 
 # We run as root so that we don't have to change the file permissions.
-node.default["apache"]["user"] = "root"
-node.default["apache"]["group"] = "root"
+node.default["apache"]["user"] = "vagrant"
+node.default["apache"]["group"] = "vagrant"
 
 modules = [
   "cgi",
