@@ -1,0 +1,30 @@
+{
+  "vm": {
+    "ip": "192.168.0.100",
+    "memory": "2048",
+    "synced_folders": [
+      {
+        "host_path": ".",
+        "guest_path": "/var/www",
+        "type": "default"
+      }
+    ],
+    "forwarded_ports": []
+  },
+  "vwd": {
+    "sites": {
+      "wordpress.dev": {
+        "account_name": "root",
+        "account_pass": "root",
+        "account_mail": "hello@wordpress.dev",
+        "site_name": "wordpress.dev",
+        "site_mail": "hello@wordpress.dev",
+        "vhost": {
+          "document_root": "wordpress",
+          "url": "wp.sketch.dev",
+          "alias": ["wp.sketch.dev"]
+        }
+      }
+    }
+  }
+}

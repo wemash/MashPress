@@ -1,0 +1,42 @@
+{
+  "name": "vwd",
+  "env_run_lists": {},
+  "default_attributes": {
+    "mysql": {
+      "server_root_password": "root",
+      "server_repl_password": "root",
+      "server_debian_password": "root"
+    }
+  },
+  "override_attributes": {},
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[apache2]",
+    "recipe[mysql::client]",
+    "recipe[mysql::server]",
+    "recipe[vwd::apache]",
+    "recipe[vwd::graphviz]",
+    "recipe[vwd::vwd_sites]",
+    "recipe[vwd::php]",
+    "recipe[vwd::uploadprogress]",
+    "recipe[vwd::mailcatcher]",
+    "recipe[vwd::phpmyadmin]",
+    "recipe[vwd::mysql]",
+    "recipe[vwd::xdebug]",
+    "recipe[vwd::git]",
+    "recipe[vwd::webgrind]",
+    "recipe[vwd::mc]",
+    "recipe[vwd::apc]",
+    "recipe[vwd::rsync]",
+    "recipe[vwd::curl]",
+    "recipe[vwd::composer]",
+    "recipe[vwd::drush]",
+    "recipe[vwd::vwd_help]",
+    "recipe[vwd::vim]",
+    "recipe[vwd::patchutils]",
+    "recipe[vwd::siege]"
+  ],
+  "description": "Installs Wordpress development environment.",
+  "chef_type": "role"
+}
