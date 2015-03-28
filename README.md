@@ -8,7 +8,24 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 * Homebrew `brew install virtualbox` and `brew install vagrant`
 * Make sure you pull the Wordpress submodule with `git submodule init` and `git submodule update`
 
-## Server Setup
+## Getting Started
+
+1. Fork or clone the repository.
+2. Update the submodules using `git submodule init` and `git submodule update`
+   * This will clone WordPress into the `www/wp` directory.
+3. Run `vagrant up` and cross your fingers.
+   * **You'll need to type in your password when vagrant tries to mount the nfs directories**
+   
+### Useful Vagrant Commands
+
+* Bring up the virtual machine: `vagrant up`
+* Provision the virtual machine: `vagrant provision`
+  * This is useful if the inital install fails for whatever reason and you need to run it again.
+* Stop the VM temporarily: `vagrant suspend`
+* Shut down the VM: `vagrant halt`
+* Destroy the VM and delete the vhd: `vagrant destroy`
+
+## Vagrant Server Details
 
 * Vagrant will mount the `www/` directory into the virtual machine's `var/www`
 * `var/www/wp` is the WordPress submodule location. Again make sure you import it.
