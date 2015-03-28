@@ -31,7 +31,7 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 * Vagrant will mount the `www/` directory into the virtual machine's `var/www`
 * `var/www/wp` is the WordPress submodule location. Again make sure you import it.
 * Vagrant will attempt to forward localhost port 8080 to the virtual machine web server. If this port is not available, vagrant will search for a free one.
-* The default server location is `192.168.0.100` and can be configured in `config.json`
+* The default server location is `192.168.100.100` and can be configured in `config.json`
 
 ### MySQL Server
 
