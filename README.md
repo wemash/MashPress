@@ -20,7 +20,7 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 * root username: root
 * root password: root
 
-### PHPMyAdmin
+### Available Software
 
 * phpmyadmin is installed and available at `http://localhost:8080/phpmyadmin`
 * webgrind is installed and available at `http://localhost:8080/webgrind`
