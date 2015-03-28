@@ -5,7 +5,8 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 ## Assumptions
 
 * You'll need to have virtualbox and vagrant installed.
-* Homebrew `brew install virtualbox` and `brew install vagrant`
+* Homebrew:
+  * `brew install virtualbox` and `brew install vagrant`
 * Make sure you pull the Wordpress submodule with `git submodule init` and `git submodule update`
 
 ## Getting Started
@@ -48,5 +49,8 @@ The [WordPress Skelton] (https://github.com/markjaquith/WordPress-Skeleton) is u
 
 ## Questions & Answers
 
-**Q:** How do I remove the /wp from the url?
-**A:** If you would like to remove the /wp from the url then simply change the site url config option in the WordPress admin panel.
+**Q:** How do I remove the `/wp` from the url?  
+**A:** If you would like to remove the `/wp` from the url then simply change the site url config option in the WordPress admin panel.
+
+**Q:** I'm getting a php error when trying to view the site!  
+**A:** Chances are that you forgot to run `git submodule init` and `git submodule update` when cloning the repository. You need WordPress!
