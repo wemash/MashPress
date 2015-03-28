@@ -1,6 +1,6 @@
 # MashPress VWD
 
-MashPress VWD stands for Vagrant Wordpress Development and is loosely based off the [Vagrant Drupal Development] (https://www.drupal.org/project/vdd).
+MashPress VWD stands for Vagrant Wordpress Development and is loosely based off the [Vagrant Drupal Development](https://www.drupal.org/project/vdd).
 
 ## Assumptions
 
@@ -19,12 +19,12 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
    
 ### Useful Vagrant Commands
 
-* Bring up the virtual machine: `vagrant up`
-* Provision the virtual machine: `vagrant provision`
+* `vagrant up` Bring up the virtual machine.
+* `vagrant provision` Provision the virtual machine. 
   * This is useful if the inital install fails for whatever reason and you need to run it again.
-* Stop the VM temporarily: `vagrant suspend`
-* Shut down the VM: `vagrant halt`
-* Destroy the VM and delete the vhd: `vagrant destroy`
+* `vagrant suspend` Stop the VM temporarily.
+* `vagrant halt` Shut down the VM.
+* `vagrant destroy` Destroy the VM and delete the vhd.
 
 ## Vagrant Server Details
 
@@ -35,8 +35,8 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 
 ### MySQL Server
 
-* root username: root
-* root password: root
+* Username: `root`
+* Password: `root`
 
 ### Available Software
 
@@ -45,7 +45,7 @@ MashPress VWD stands for Vagrant Wordpress Development and is loosely based off 
 
 ## WordPress Skelton
 
-The [WordPress Skelton] (https://github.com/markjaquith/WordPress-Skeleton) is used to better organize the WordPress directory. The uploads symlink has been removed because why not commit your uploads directory?
+The [WordPress Skelton](https://github.com/markjaquith/WordPress-Skeleton) is used to better organize the WordPress directory. The uploads symlink has been removed because why not commit your uploads directory?
 
 ## Questions & Answers
 
