@@ -10,7 +10,7 @@ echo "Checking for updates..."
 apt-get update &> /dev/null
 
 #Install ruby
-echo "Checking for ruby 1.9.1-dev and installing if it's missing..."
+echo "Checking for ruby and installing if it's missing..."
 apt-get install build-essential ruby1.9.1-dev --no-upgrade --yes &> /dev/null
 
 # Upgrade Chef.
