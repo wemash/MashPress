@@ -1,7 +1,7 @@
 {
   "vm": {
     "ip": "192.168.100.100",
-    "memory": "2048",
+    "memory": "512",
     "synced_folders": [
       {
         "host_path": "www/",
